@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Dart Bid Number Generator",
+  "name_for_model": "dart_bid_number",
+  "description_for_human": "Generates the next available Dart bid number and logs project info.",
+  "description_for_model": "Generate and retrieve the next Dart bid number for a construction estimate. Returns the bid number and logs the client, project, scope, notes, and PDF link.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://dbhyde.github.io/dart-gpt-plugin/openapi.yaml"
+  },
+  "logo_url": "https://dbhyde.github.io/dart-gpt-plugin/logo.png",
+  "contact_email": "dbhyde@dartcon.biz",
+  "legal_info_url": "https://dbhyde.github.io/dart-gpt-plugin/legal"
+}
