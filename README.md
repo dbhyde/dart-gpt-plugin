@@ -1,2 +1,2 @@
-# dart-got-plugin
+# dart-gpt-plugin
 Dart Estimator bid number plugin
