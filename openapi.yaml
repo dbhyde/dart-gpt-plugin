@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: Dart Bid Number Generator API
+  version: 1.0.0
+servers:
+  - url: https://script.google.com/macros/s/AKfycbzrkr5T-CTcB64Bs6sri8kZuWg4fMafn_ZJM7Q3P8-QG1IDSXEClbrqL_4i9XhKwucM/exec
+paths:
+  /:
+    post:
+      summary: Generate next Dart bid number
+      operationId: generateBidNumber
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client:
+                  type: string
+                project:
+                  type: string
+                scope:
+                  type: string
+                notes:
+                  type: string
+                pdfLink:
+                  type: string
+      responses:
+        '200':
+          description: The generated bid number
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  bidNumber:
+                    type: string
